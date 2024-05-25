@@ -9,8 +9,15 @@
   "author": "Domenico Pagano",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^10.4.19",
     "gulp": "^4.0.2",
+    "gulp-postcss": "^10.0.0",
     "gulp-sass": "^5.0.0",
+    "postcss": "^8.4.38",
     "sass": "^1.37.5"
-  }
+  },
+  "browserslist": [
+    "last 1 version",
+    "> 1%"
+  ]
 }

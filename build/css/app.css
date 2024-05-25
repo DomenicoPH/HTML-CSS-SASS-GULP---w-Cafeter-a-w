@@ -4,5 +4,10 @@ body {
 
 h1 {
   color: coral;
-  font-size: 4rem;
+  font-size: 5rem;
+  display: flex;
+}
+
+div {
+  display: flex;
 }
