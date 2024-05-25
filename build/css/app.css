@@ -1,3 +1,13 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  background-color: burlywood;
+}
+
+.nav {
+  background-color: blue;
+}
+
 body {
   background-color: rgb(68, 148, 148);
 }
@@ -5,9 +15,5 @@ body {
 h1 {
   color: coral;
   font-size: 5rem;
-  display: flex;
-}
-
-div {
   display: flex;
 }

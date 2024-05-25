@@ -12,6 +12,9 @@ const { src, dest, watch, series, parallel } = require('gulp');
 /*  import from gulp...
     src = source (ls fuente a compilar. El archivo .scss)
     dest = destination (el archivo .css de destino)
+    watch = observador (está pendiente de los cambios)
+    series = función que ejecuta las tareas en serie.
+    parallel = función que ejecuta las tareas en paralelo.
 */
 const sass = require('gulp-sass')(require('sass'));
 const postcss = require('gulp-postcss');
@@ -32,7 +35,11 @@ function css(done){ // ------------------------------ Función compiladora
 }
 
 function dev(){ // ------------------------------ watcher
-    watch('src/scss/app.scss', css)
+    /* 
+        watch(archivo a observar, función compiladora)
+    */
+    watch('src/scss/**/*.scss', css);
+    watch('src/scss/app.scss', css);
 }
 
 exports.css = css;
