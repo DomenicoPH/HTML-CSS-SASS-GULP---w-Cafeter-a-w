@@ -1,16 +1,1 @@
-@use 'header/header';
-@use 'header/navegacion';
-
-// Variables
-$color1: rgb(68, 148, 148);
-$color2: coral;
-
-// Scss
-body{
-    background-color: $color1;
-}
-h1{
-    color: $color2;
-    font-size: 5rem;
-    display: flex;
-}
+@use 'base/index';
