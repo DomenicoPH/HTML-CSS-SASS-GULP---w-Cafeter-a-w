@@ -14,10 +14,17 @@
 # Gulp Image Min (minificador)
 
     npm i --save-dev gulp-imagemin
+    npm i --save-dev gulp-imagemin@7.1.0
 
 # Gulp Webp (webp generator)
 
     npm i --save-dev gulp-webp
+    npm i --save-dev gulp-webp@4.0.1
+
+# Gulp Avif (Avif generator)
+
+    npm i --save-dev gulp-avif
+    npm i --save-dev gulp-avif@1.0.1
 
 ---
 
