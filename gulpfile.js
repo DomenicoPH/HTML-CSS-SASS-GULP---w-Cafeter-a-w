@@ -44,7 +44,7 @@ function dev(){ // ------------------------------ watcher
 
 exports.css = css;
 exports.dev = dev;
-exports.default = series( css, dev);
+exports.default = series(css, dev);
 
 // series -> Se inicia una tarea y al finalizar inicia la siguiente.
 // parallel -> Todas las tareas se inician al mismo tiempo y van terminando progresivamente.
