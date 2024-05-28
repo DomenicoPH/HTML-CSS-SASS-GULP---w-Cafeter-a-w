@@ -11,6 +11,14 @@
 
     npm i --save-dev autoprefixer gulp-postcss postcss
 
+# Gulp Image Min (minificador)
+
+    npm i --save-dev gulp-imagemin
+
+# Gulp Webp (webp generator)
+
+    npm i --save-dev gulp-webp
+
 ---
 
 # Gulp / gulpfile.js
