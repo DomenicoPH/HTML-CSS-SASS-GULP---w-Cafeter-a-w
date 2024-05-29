@@ -1,8 +1,10 @@
 @use '../base/variables' as v;
+@use '../base/mixins' as m;
 
 .header{
     padding: 5rem 0;
     position: relative;
+    @include m.color;
 
     &::before{
         content: '';
@@ -23,4 +25,5 @@
 // Header de cada página
 .header-inicio{
     background-image: url('../../../build/img/header_inicio.webp');
+    @include m.color;
 }
