@@ -3,3 +3,7 @@
     font-size: 2rem;
     text-decoration: none;
 }
+
+@mixin bgColor($color){
+    background-color: $color;
+}

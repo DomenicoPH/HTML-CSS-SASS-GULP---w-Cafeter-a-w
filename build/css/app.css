@@ -369,9 +369,7 @@ h3 {
 .header {
   padding: 5rem 0;
   position: relative;
-  color: black;
-  font-size: 2rem;
-  text-decoration: none;
+  background-color: red;
 }
 .header::before {
   content: "";
@@ -389,7 +387,5 @@ h3 {
 
 .header-inicio {
   background-image: url("../../../build/img/header_inicio.webp");
-  color: black;
-  font-size: 2rem;
-  text-decoration: none;
+  background-color: blue;
 }
