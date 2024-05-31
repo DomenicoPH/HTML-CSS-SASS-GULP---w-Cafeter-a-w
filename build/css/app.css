@@ -369,7 +369,21 @@ h3 {
 .header {
   padding: 5rem 0;
   position: relative;
-  background-color: red;
+}
+@media (min-width: 480px) {
+  .header {
+    padding: 10rem;
+  }
+}
+@media (min-width: 768px) {
+  .header {
+    padding: 6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .header {
+    padding: 2rem;
+  }
 }
 .header::before {
   content: "";
@@ -387,5 +401,50 @@ h3 {
 
 .header-inicio {
   background-image: url("../../../build/img/header_inicio.webp");
-  background-color: blue;
+}
+
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .nav-principal {
+    flex-direction: row;
+    gap: 1.25rem;
+  }
+}
+.nav-principal a {
+  text-align: center;
+  color: #fff;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.barra .logo {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .barra .logo {
+    width: 20rem;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (min-width: 768px) {
+  .barra .logo {
+    width: 20rem;
+    margin: 0;
+  }
 }

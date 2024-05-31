@@ -1,0 +1,21 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+@use 'sass:math';
+
+.nav-principal{
+    display: flex;
+    flex-direction: column;
+    
+    @include m.tablet { 
+        flex-direction: row;
+        gap: math.div( v.$separacion, 4);
+    }
+
+    a{
+        text-align: center;
+        color: v.$blanco;
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+}

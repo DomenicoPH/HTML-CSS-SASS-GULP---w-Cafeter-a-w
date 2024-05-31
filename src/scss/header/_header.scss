@@ -4,7 +4,16 @@
 .header{
     padding: 5rem 0;
     position: relative;
-    @include m.bgColor(red);
+
+    @include m.telefono {
+        padding: 10rem;
+    }
+    @include m.tablet {
+        padding: 6rem;
+    }
+    @include m.desktop {
+        padding: 2rem;
+    }
 
     &::before{
         content: '';
@@ -25,5 +34,4 @@
 // Header de cada página
 .header-inicio{
     background-image: url('../../../build/img/header_inicio.webp');
-    @include m.bgColor(blue);
 }
