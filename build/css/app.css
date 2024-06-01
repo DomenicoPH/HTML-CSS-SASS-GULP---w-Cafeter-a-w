@@ -363,7 +363,7 @@ h3 {
 }
 
 .bg-primario {
-  background-color: #E8505B;
+  background-color: #5E311E;
 }
 
 .header {
@@ -398,6 +398,11 @@ h3 {
 .header .contenido-header {
   position: relative;
 }
+.header .contenido-header .header-texto .h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+}
 
 .header-inicio {
   background-image: url("../../../build/img/header_inicio.webp");
@@ -406,11 +411,13 @@ h3 {
 .nav-principal {
   display: flex;
   flex-direction: column;
+  margin-top: 5rem;
 }
 @media (min-width: 768px) {
   .nav-principal {
     flex-direction: row;
-    gap: 1.25rem;
+    gap: 1rem;
+    margin-top: 0;
   }
 }
 .nav-principal a {
@@ -419,6 +426,18 @@ h3 {
   font-size: 2rem;
   text-transform: uppercase;
   font-weight: 700;
+  margin-bottom: 1rem;
+}
+@media (min-width: 768px) {
+  .nav-principal a {
+    margin-bottom: 0;
+  }
+}
+.nav-principal a:hover {
+  color: #C39C63;
+}
+.nav-principal a.activo {
+  color: #C39C63;
 }
 
 .barra {

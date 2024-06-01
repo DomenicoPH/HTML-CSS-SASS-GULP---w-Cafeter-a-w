@@ -28,6 +28,14 @@
 
     .contenido-header{
         position: relative;
+
+        .header-texto{
+            .h1{
+                text-align: center;
+                text-transform: uppercase;
+                color: v.$blanco;
+            }
+        }
     }
 }
 
