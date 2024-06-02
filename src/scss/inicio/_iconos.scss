@@ -1,0 +1,20 @@
+@use 'base/variables' as v;
+
+.iconos{
+    margin-top: 5rem;
+
+    .listado-iconos{
+
+        li{
+            img{
+                margin: 0 auto;
+                width: 12rem;
+            }
+            p{
+                font-family: v.$fuenteCursiva;
+                font-size: 3.2rem;
+                color: v.$primario;
+            }
+        }
+    }
+}
