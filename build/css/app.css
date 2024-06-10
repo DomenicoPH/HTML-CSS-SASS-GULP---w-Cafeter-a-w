@@ -617,7 +617,7 @@ h3 {
   background-repeat: no-repeat;
   background-position: center 5rem, center 95%, 100%;
   background-size: 200%;
-  padding: 15rem 5rem 20rem 5rem;
+  padding: 15rem 2rem 20rem 2rem;
 }
 @media (min-width: 768px) {
   .nuestro-menu {
@@ -637,4 +637,27 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
+}
+
+.menu h3 {
+  color: #fff;
+}
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li p {
+  color: #fff;
+  font-size: 2.2rem;
+  line-height: 1.5;
+  margin: 0 0 2rem 0;
+}
+.menu li p span {
+  display: block;
+  color: #C39C63;
+}
+.menu li .precio {
+  font-size: 4rem;
+  font-weight: 700;
 }

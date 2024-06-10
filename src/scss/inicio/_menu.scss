@@ -6,7 +6,7 @@
     background-repeat: no-repeat;
     background-position: center 5rem, center 95%, 100%;
     background-size: 200%;
-    padding: 15rem 5rem 20rem 5rem;
+    padding: 15rem 2rem 20rem 2rem;
 
     @include m.tablet { 
         padding: 15rem 0 20rem 0;
@@ -32,15 +32,21 @@
     li{
         display: flex;
         justify-content: space-between;
+        align-items: center;
         p{
             color: v.$blanco;
             font-size: 2.2rem;
+            line-height: 1.5;
+            margin: 0 0 2rem 0;
+
             span{
                 display: block;
+                color: v.$secundario;
             }
         }
         .precio{
-            
+            font-size: 4rem;
+            font-weight: 700;
         }
     }
 }
