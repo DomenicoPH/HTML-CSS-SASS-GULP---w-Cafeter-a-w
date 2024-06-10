@@ -26,13 +26,17 @@
 
 .menu{
     h3{
-
+        color: v.$blanco;
     }
 
     li{
+        display: flex;
+        justify-content: space-between;
         p{
+            color: v.$blanco;
+            font-size: 2.2rem;
             span{
-
+                display: block;
             }
         }
         .precio{
