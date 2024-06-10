@@ -614,10 +614,27 @@ h3 {
 
 .nuestro-menu {
   background-image: url("../img/menu_arriba.svg"), url("../img/menu_abajo.svg"), linear-gradient(to top, #5E311E, #5E311E);
-  padding: 15rem 5rem 20rem;
+  background-repeat: no-repeat;
+  background-position: center 5rem, center 95%, 100%;
+  background-size: 200%;
+  padding: 15rem 5rem 20rem 5rem;
 }
 @media (min-width: 768px) {
   .nuestro-menu {
     padding: 15rem 0 20rem 0;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .nuestro-menu {
+    background-size: 50%, 50%, 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .grid-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
   }
 }
