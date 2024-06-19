@@ -415,6 +415,8 @@ h3 {
 .header {
   padding: 5rem 0;
   position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 @media (min-width: 768px) {
   .header {
@@ -447,7 +449,11 @@ h3 {
 }
 
 .header-inicio {
-  background-image: url("../../../build/img/header_inicio.webp");
+  background-image: url("../img/header_inicio.webp");
+}
+
+.header-nosotros {
+  background-image: url("../img/header_nosotros.webp");
 }
 
 .nav-principal {
