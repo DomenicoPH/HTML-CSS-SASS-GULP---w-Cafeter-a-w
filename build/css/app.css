@@ -397,22 +397,6 @@ h3 {
   font-size: 3.2rem;
 }
 
-.text-center {
-  text-align: center;
-}
-
-.bg-primario {
-  background-color: #5E311E;
-}
-
-.bg-white {
-  background-color: #fff;
-}
-
-.margin-negativo-10 {
-  margin-top: -10rem;
-}
-
 .header {
   padding: 5rem 0;
   position: relative;
@@ -463,6 +447,14 @@ h3 {
 
 .header-menu {
   background-image: url("../img/header_menu.webp");
+}
+
+.header-galeria {
+  background-image: url("../img/header_galeria.webp");
+}
+
+.header-contacto {
+  background-image: url("../img/header_contacto.webp");
 }
 
 .nav-principal {
@@ -824,4 +816,87 @@ h3 {
   width: 50%;
   height: 5px;
   background-color: #C39C63;
+}
+
+.contenido-menu {
+  background-image: url(../img/cafe.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: 100%;
+  aspect-ratio: 3/6;
+}
+@media (min-width: 480px) {
+  .contenido-menu {
+    aspect-ratio: 3/4;
+  }
+}
+@media (min-width: 768px) {
+  .contenido-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    aspect-ratio: 16/6;
+    background-size: 40%;
+    background-position: bottom right;
+  }
+}
+.contenido-menu .texto {
+  font-size: 2rem;
+}
+
+@media (min-width: 768px) {
+  .contenido-contacto {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    background-image: url(../img/granos_cafe.jpg);
+    background-repeat: no-repeat;
+    background-position: right center;
+  }
+}
+
+.formulario .campo {
+  margin-bottom: 2rem;
+}
+.formulario .campo:last-of-type {
+  margin-bottom: 0;
+}
+.formulario .campo label {
+  text-transform: uppercase;
+  display: block;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+.formulario .campo input[type=submit] {
+  background-color: #5E311E;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  color: #fff;
+  font-size: 2.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.formulario .campo input[type=submit]:hover {
+  cursor: pointer;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primario {
+  background-color: #5E311E;
+}
+
+.bg-white {
+  background-color: #fff;
+}
+
+.margin-negativo-10 {
+  margin-top: -10rem;
+}
+
+.padding-bottom-0 {
+  padding-bottom: 0;
 }
