@@ -852,6 +852,7 @@ h3 {
     background-image: url(../img/granos_cafe.jpg);
     background-repeat: no-repeat;
     background-position: right center;
+    background-size: 40%;
   }
 }
 
@@ -866,6 +867,12 @@ h3 {
   display: block;
   font-size: 2.2rem;
   font-weight: 700;
+}
+.formulario .campo input:not([type=submit]),
+.formulario .campo select {
+  width: 100%;
+  padding: 1rem;
+  border: 0.5rem solid #5E311E;
 }
 .formulario .campo input[type=submit] {
   background-color: #5E311E;
