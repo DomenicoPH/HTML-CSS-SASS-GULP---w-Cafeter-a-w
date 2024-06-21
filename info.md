@@ -59,3 +59,19 @@ Al ejecutar el comando 'gulp css' en la consola se ejecuta el la función 'css' 
 
 ## gulp dev
 Al ejecutar el comando 'gulp css' en la consola se ejecuta el la función 'dev' del archivo gulpfile.js, encargada de observar los cambios en el archivo .scss y ejecutar la función 'css' cada vez que esto ocurra.
+
+# Extras
+
+## Gulp 'source maps'  
+Identifica el origen de las imágenes en Sass, ya no en el .css compilado.
+
+    npm i --save-dev gulp-sourcemaps
+
+## CSS Nano  
+Minifica el .css final optimizándolo.
+
+    npm i --save-dev cssnano
+
+
+---
+# --> 'gulp' o 'gulp dev' para compilar con Gulp
