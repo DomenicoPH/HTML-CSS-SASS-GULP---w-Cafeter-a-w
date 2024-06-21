@@ -461,6 +461,10 @@ h3 {
   background-image: url("../img/header_proceso.webp");
 }
 
+.header-menu {
+  background-image: url("../img/header_menu.webp");
+}
+
 .nav-principal {
   display: flex;
   flex-direction: column;
@@ -770,4 +774,54 @@ h3 {
   margin: 0;
   padding: 1rem;
   border-left: 0.5rem solid #5E311E;
+}
+
+.proceso-cafe {
+  margin-bottom: 5rem;
+  /* 
+  &:nth-child(2),
+  &:nth-child(4){
+      .texto{
+          order: 1;
+      }
+      .imagen{
+          order: 2;
+      }
+  } 
+  */
+}
+@media (min-width: 768px) {
+  .proceso-cafe {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+}
+.proceso-cafe:last-of-type {
+  margin-bottom: 0;
+}
+.proceso-cafe:nth-child(even) .texto {
+  order: 1;
+}
+.proceso-cafe:nth-child(even) .imagen {
+  order: 2;
+}
+.proceso-cafe .imagen,
+.proceso-cafe .texto {
+  flex: 1;
+}
+.proceso-cafe .texto {
+  margin-top: 1rem;
+}
+.proceso-cafe .texto h3 {
+  margin: 0;
+  text-align: left;
+  color: #5E311E;
+}
+.proceso-cafe .texto h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 5px;
+  background-color: #C39C63;
 }
